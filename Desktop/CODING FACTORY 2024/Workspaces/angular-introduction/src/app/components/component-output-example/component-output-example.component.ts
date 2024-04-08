@@ -58,6 +58,6 @@ styles: [
 class PersonDialogComponent{
   constructor(
     public dialogRef:DialogRef<PersonDialogComponent>,
-    @Inject(DIALOG_DATA) public person:EPerson
+    @Inject(DIALOG_DATA) public person : EPerson
   ) {}
 }
