@@ -38,12 +38,19 @@
     <input 
     matInput
     type="text"
+    (blur)="check_duplicate_email()"
     formControlName="email" />
+    @if(form.get('email').hasError("duplicateEmail")){
+        <mat-error>
+            Email Name is already registered
+        </mat-error>
+    }@else{
     @if(form.get('email').invalid && form.get('email').touched) {
         <mat-error>
             Email Name is missing or invalid
         </mat-error>
     }
+}
 </mat-form-field>
 <mat-form-field>
     <mat-label>
@@ -107,3 +114,5 @@
         Register Another User
     </button>
 }
+
+
