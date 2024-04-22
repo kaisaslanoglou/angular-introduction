@@ -65,6 +65,7 @@ export class UserRegistrationComponent {
       message: 'Not attempted yet'
   };
   }
+  
 
   check_duplicate_email(){
     const email = this.form.get('email').value
