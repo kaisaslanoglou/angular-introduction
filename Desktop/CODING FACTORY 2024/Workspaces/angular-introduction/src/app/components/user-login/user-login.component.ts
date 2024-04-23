@@ -3,13 +3,13 @@ import { ReactiveFormExampleComponent } from '../reactive-form-example/reactive-
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { UserService } from 'src/app/shared/services/user.service';
 import { Credentials, LoggedInUser } from '../restricted-content-example/restricted-content-example.component';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { jwtDecode } from 'jwt-decode';
 
 @Component({
   selector: 'app-user-login',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './user-login.component.html',
   styleUrl: './user-login.component.css'
 })
