@@ -33,10 +33,10 @@ export const routes: Routes = [
     canActivate: [authGuard]},
     {path: 'fun-for-nerds', component: FunForNerdsComponent},
     {path: 'crud-example', component: CrudDashboardComponent, canActivate: [authGuard]},
-    {path: 'crud-example-create', component: CrudCreateExampleComponent, canActivate: [authGuard]},
-    {path: 'crud-example-read', component: CrudReadExampleComponent, canActivate: [authGuard]},
-    {path: 'crud-example-update', component: CrudUpdateExampleComponent, canActivate: [authGuard]},
-    {path: 'crud-example-delete', component: CrudDeleteExampleComponent, canActivate: [authGuard]},
+    {path: 'crud-example/create', component: CrudCreateExampleComponent, canActivate: [authGuard]},
+    {path: 'crud-example/read', component: CrudReadExampleComponent, canActivate: [authGuard]},
+    {path: 'crud-example/update', component: CrudUpdateExampleComponent, canActivate: [authGuard]},
+    {path: 'crud-example/delete', component: CrudDeleteExampleComponent, canActivate: [authGuard]},
     {path: 'login', component: UserLoginComponent},
     // {path: '', component: WelcomeComponent}
 ];

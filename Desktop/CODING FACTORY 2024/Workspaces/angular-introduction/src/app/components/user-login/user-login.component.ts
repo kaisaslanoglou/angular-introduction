@@ -38,7 +38,6 @@ export class UserLoginComponent {
         fullname: decodedTokenSubject.fullname,
         email: decodedTokenSubject.email
         });
-        this.router.navigate['restricted-content-example']
 
         this.router.navigate(['restricted-content-example'])
       },

@@ -13,8 +13,10 @@ import { UserService } from 'src/app/shared/services/user.service';
 })
 export class NavbarComponent {
   userService = inject(UserService);
+
   user = this.userService.user;
   logout() {
     this.userService.logoutUser();
   }
+  
 }
