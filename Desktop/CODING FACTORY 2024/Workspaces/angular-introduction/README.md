@@ -1,5 +1,6 @@
 # Εισαγωγή στο Angular Framework
 
+## Τέλος Angular
 ## Βήμα 17: CRUD Example Scaffolding
  
 - Δημιουργία των component για το CRUD Example:
